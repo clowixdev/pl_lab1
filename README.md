@@ -18,6 +18,14 @@ without any flags for optimization:
 gcc OPTBENCH.c -o non-optimized.exe
 ```
 
+with optimization flags for speed:
+
+```console
+gcc -Ofast OPTBENCH.c -o optimized.exe
+```
+
+- `-Ofast` is equivalent to `-O3 -ffast-math` turning on higher optimization levels and more aggressive math optimization
+
 with optimization flags:
 
 ```console
