@@ -29,11 +29,10 @@ gcc -Ofast OPTBENCH.c -o optimized.exe
 with optimization flags for size:
 
 ```console
-gcc -march=native -m64 -Oz -flto OPTBENCH.c -o size-optimized.exe
+gcc -m64 -Oz -flto OPTBENCH.c -o size-optimized.exe
 ```
 
 - `-Oz` turning on aggressive optimizations for size, similarly to `-Os` but aggressively
-- `-march=native` - it's turning on architecture optimizations
 - `-flto` - intermodular optimizations
 - `-m64` - 64 bits mode
 
