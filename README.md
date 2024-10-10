@@ -26,18 +26,16 @@ gcc -Ofast OPTBENCH.c -o optimized.exe
 
 - `-Ofast` is equivalent to `-O3 -ffast-math` turning on higher optimization levels and more aggressive math optimization
 
-with optimization flags:
+with optimization flags for size:
 
 ```console
-gcc -m64 -Ofast -flto -march=native -funroll-loops OPTBENCH.c -o optimized.exe
+gcc -march=native -m64 -Oz -flto OPTBENCH.c -o size-optimized.exe
 ```
 
-- `-Ofast` is equivalent to `-O3 -ffast-math` turning on higher optimization levels and more aggressive math optimization
+- `-Oz` turning on aggressive optimizations for size, similarly to `-Os` but aggressively
 - `-march=native` - it's turning on architecture optimizations
 - `-flto` - intermodular optimizations
 - `-m64` - 64 bits mode
-- `-funroll-loops` - turning on loops unpacking
-
 
 ### Disassembly
 
