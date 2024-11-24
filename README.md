@@ -48,6 +48,6 @@ where:
 - `-d` - disassembly flag
 - `-Mintel` - flag that sets intel architecture for asm syntax
 
-### Comparison
+#### Lab is done, you can find reports just here in [docx](lab1plang_f.docx) and [pdf](lab1plang_f.pdf) formats
 
->STATUS: processing results
+>STATUS: Accepted!
